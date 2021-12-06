@@ -118,6 +118,7 @@ Side data is serialized and saved to file after it's generated so the puzzle can
 
 # 3) Generating puzzle pieces
 Now that side data lookup is available, I can generate the actual images for the pieces. This is how a mask and final pieces look:
+
 ![jigsaw_mask.jpg.png|200x200](/assets/images/jigsaw-puzzle-generation/mask.jpg) ![pieces.jpg|200x200](/assets/images/jigsaw-puzzle-generation/pieces.jpg)
 
 I go through all the pieces again (same order as before, it does not matter here though). 
