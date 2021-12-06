@@ -240,3 +240,5 @@ mask.Unlock();
 
 After all this is done, I also add some other data and collision shape to each piece (important to disable monitoring - it kills performance and I don't use it for puzzle pieces anyway). 
 Last thing left to do is to add pieces to the scene, which is handled by another class. 
+
+The game in it's current state can be downloaded on [itch.io](https://brikp.itch.io/infinite-jigsaw).
