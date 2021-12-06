@@ -1,6 +1,6 @@
 ---
 title: "Jigsaw Puzzle Generation"
-permalink: /posts/
+permalink: /posts/jigsaw-puzzle-generation
 layout: single
 show_date: true
 categories:
