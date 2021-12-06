@@ -1,12 +1,3 @@
----
-title: "Jigsaw Puzzle Generation"
-last_modified_at: 2021-12-06T14:20:02+01:00
-categories:
-  - Devlog
-tags:
-  - Jigsaw
----
-
 # Intro
 Hi, I'm brikp and I'm going to show you how I'm generating randomized puzzle pieces at runtime in my Jigsaw puzzle game (title still pending ;)). 
 I'm using Godot engine, mono version (3.4 as of this post) with C#. 
@@ -16,10 +7,13 @@ Let's get to it.
 
 # General processes outline
 Currently, I'm only doing grid type puzzles with rectangle as a base (and it will probably stay that way). Shapes are applied using a set of masks. I'm heavily leveraging Godot Image class in the process. Each puzzle piece is a separate object with it's own texture and some additional data.
+This is how it looks ingame:
+![Animation.gif](/assets/images/jigsaw-puzzle-generation/animation.gif)
 
 Full code for puzzle piece generating class - [gist](https://gist.github.com/brikp/e181c17577a922340442ebe0419e2c3a).
 
 General algorithm looks more or less like this:
+
 - Calculate puzzle piece amount in X and Y dimensions. Check how many full pieces fit on each axis, cut out an actual puzzle from the middle out 
 - Generate puzzle pieces side data
 - Generate pieces by taking parts of the image and applying masks to it according to the side data lookup
@@ -123,9 +117,10 @@ if (result.Left.isTab && result.Top.isTab)
 Side data is serialized and saved to file after it's generated so the puzzle can be reloaded later with the same layout.
 
 # 3) Generating puzzle pieces
-Now that side data lookup is available, I can generate the actual images for the pieces. 
+Now that side data lookup is available, I can generate the actual images for the pieces. This is how a mask and final pieces look:
+![jigsaw_mask.jpg.png|200x200](/assets/images/jigsaw-puzzle-generation/mask.jpg) ![pieces.jpg|200x200](/assets/images/jigsaw-puzzle-generation/pieces.jpg)
 
-Here we go through all the pieces again (same order as before, it does not matter here though). 
+I go through all the pieces again (same order as before, it does not matter here though). 
 
 First we just cut out square piece without tabs or blanks:
 ``` c#
