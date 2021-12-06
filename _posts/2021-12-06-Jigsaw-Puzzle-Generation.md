@@ -3,6 +3,7 @@ title: "Jigsaw Puzzle Generation"
 permalink: /posts/jigsaw-puzzle-generation
 layout: single
 show_date: true
+classes: wide
 categories:
   - Devlog
 tags:
