@@ -15,7 +15,7 @@ Hi! I'm going to show you how I'm generating randomized puzzle pieces at runtime
 I'm using Godot engine, mono version (3.4 as of this post) with C#. 
 
 This is my first devlog so it might be a bit rough. 
-Let's get to it. 
+Let's just get to it. 
 
 # General processes outline
 Currently, I'm only doing grid type puzzles with rectangle as a base (and it will probably stay that way). Shapes are applied using a set of masks. I'm heavily leveraging Godot Image class in the process. Each puzzle piece is a separate object with it's own texture and some additional data.
