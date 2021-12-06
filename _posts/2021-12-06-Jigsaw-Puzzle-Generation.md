@@ -20,6 +20,7 @@ Currently, I'm only doing grid type puzzles with rectangle as a base (and it wil
 Full code for puzzle piece generating class - [gist](https://gist.github.com/brikp/e181c17577a922340442ebe0419e2c3a).
 
 General algorithm looks more or less like this:
+
 1) Calculate puzzle piece amount in X and Y dimensions. Check how many full pieces fit on each axis, cut out an actual puzzle from the middle out 
 2) Generate puzzle pieces side data
 3) Generate pieces by taking parts of the image and applying masks to it according to the side data lookup
