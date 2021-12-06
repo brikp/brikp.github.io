@@ -8,6 +8,7 @@ Let's get to it.
 # General processes outline
 Currently, I'm only doing grid type puzzles with rectangle as a base (and it will probably stay that way). Shapes are applied using a set of masks. I'm heavily leveraging Godot Image class in the process. Each puzzle piece is a separate object with it's own texture and some additional data.
 This is how it looks ingame:
+
 ![Animation.gif](/assets/images/jigsaw-puzzle-generation/animation.gif)
 
 Full code for puzzle piece generating class - [gist](https://gist.github.com/brikp/e181c17577a922340442ebe0419e2c3a).
