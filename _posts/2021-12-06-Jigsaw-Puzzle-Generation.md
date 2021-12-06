@@ -1,3 +1,14 @@
+---
+title: "Jigsaw Puzzle Generation"
+permalink: /posts/
+layout: posts
+show_date: true
+categories:
+  - Devlog
+tags:
+  - Jigsaw
+---
+
 # Intro
 Hi, I'm brikp and I'm going to show you how I'm generating randomized puzzle pieces at runtime in my Jigsaw puzzle game (title still pending ;)). 
 I'm using Godot engine, mono version (3.4 as of this post) with C#. 
